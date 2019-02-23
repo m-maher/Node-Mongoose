@@ -4,7 +4,7 @@ const express = require('express');
 
 const router = express.Router();
 
-const adminController = require('../contoller/admin')
+const adminController = require('../controllers/admin')
 
 router.post('/add-data',adminController.postAddData);
 
@@ -12,10 +12,10 @@ router.get('/add-data',adminController.getAddData);
 
 router.get('/get-data', adminController.getData);
 
-router.get('/edit-product/:productId', adminController.getEditData);
+router.get('/edit-data/:productId', adminController.getEditData);
 
-router.post('/edit-product', adminController.postEditData);
+router.post('/edit-data', adminController.postEditData);
 
-router.post('/delete-product', adminController.postDeleteData);
+router.post('/delete-data', adminController.postDeleteData);
 
 module.exports = router;

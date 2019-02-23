@@ -44,7 +44,7 @@ exports.getEditData = (req, res, next) => {
         pageTitle: 'Edit Product',
         path: '/admin',
         editing: editMode,
-        product: data
+        data: data
       });
     })
     .catch(err => console.log(err));

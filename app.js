@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 const adminRoute = require('./routes/admin');
 
-const adminController = require('./contoller/admin');
+const adminController = require('./controllers/admin');
 
 app.use(adminRoute);
 
